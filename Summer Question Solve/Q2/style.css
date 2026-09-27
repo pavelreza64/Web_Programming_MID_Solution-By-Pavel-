@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 8px 16px;
+  border-bottom: 1px solid #bbb;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ── Main Layout ── */
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* ── Left Panel ── */
+.left-panel {
+  width: 300px;
+  min-width: 300px;
+  background: linear-gradient(to bottom, #d0e0e3, #87e4e9);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.semesters-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.semester-item {
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: #111;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.semester-item:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Important Notice Box */
+.notice-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 6px;
+  padding: 14px;
+  margin-top: 6px;
+}
+
+.notice-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1aff;
+  margin-bottom: 8px;
+}
+
+.notice-text {
+  font-size: 13px;
+  color: #222;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.btn-view-details {
+  background: linear-gradient(to right, #1a1aff, #0000cc);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-view-details:hover {
+  background: linear-gradient(to right, #0000cc, #000099);
+}
+
+/* ── Right Panel ── */
+.right-panel {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1aff;
+  margin-bottom: 12px;
+}
+
+/* ── Course Table ── */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-table thead tr {
+  background-color: #c47b3a;
+  color: #fff;
+}
+
+.course-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-table td {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111;
+}
+
+.row-odd {
+  background-color: #d4905a;
+}
+
+.row-even {
+  background-color: #c4845a;
+}
+
+/* ── Sign Up Form ── */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #888;
+}
+
+.btn-register {
+  background: linear-gradient(to right, #1a1aff, #ccaa00);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 9px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}
+
+/* ── Footer ── */
+.footer {
+  background: linear-gradient(to right, #c47a20, #6b8e3a);
+  color: #eee;
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+}

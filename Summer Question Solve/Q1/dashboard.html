@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIU Learning Hub</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">UIU Learning Hub</div>
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">My Courses</a>
+            <a href="#">Assignments</a>
+            <a href="#">Exams</a>
+            <a href="#">Resoruces</a>
+            <a href="#">Grades &amp; Results</a>
+            <a href="#">Calendar</a>
+            <a href="#">Discussion Forum</a>
+            <a href="#">Settings</a>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <h1>Welcome To Your Learning Dashboard</h1>
+            <input class="search-box" type="text" placeholder="Search courses...">
+        </div>
+        <div class="content">
+            <div class="courses-grid">
+                <div class="course-card card-green">
+                    <div>
+                        <h3>CSE 4521: Web Programming</h3>
+                        <p class="instructor">Nahid Hossain</p>
+                    </div>
+                    <div class="course-meta">
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
+                        <span style="font-size:12px; margin-right:10px;">Progress: 75%</span>
+                        <span class="grade">Grade: A</span>
+                    </div>
+                </div>
+                <div class="course-card card-orange">
+                    <div>
+                        <h3>CSE 3115: Database Systems</h3>
+                        <p class="instructor">Dr. Karim</p>
+                    </div>
+                    <div class="course-meta">
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 45%;"></div>
+                        </div>
+                        <span style="font-size:12px; margin-right:10px;">Progress: 45%</span>
+                        <span class="grade">Grade: B+</span>
+                    </div>
+                </div>
+
+                <div class="course-card card-dark">
+                    <div>
+                        <h3>CSE 3412: Algorithms</h3>
+                        <p class="instructor">Prof. Ahmed</p>
+                    </div>
+                    <div class="course-meta">
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                        <span style="font-size:12px; margin-right:10px;">Progress: 90%</span>
+                        <span class="grade">Grade: A+</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="section-title">Upcoming Classes &amp; Deadlines</p>
+                <div class="upcoming-grid">
+                    <div class="upcoming-card card-red-orange">
+                        <p class="time">Today, 11:00 AM – 12:30 PM</p>
+                        <p class="event-name">Web Programming</p>
+                        <span class="badge">Lecture</span>
+                    </div>
+                    <div class="upcoming-card card-blue-purple">
+                        <p class="time">Tomorrow, 9:30 AM</p>
+                        <p class="event-name">Database Quiz</p>
+                        <span class="badge">Assessment</span>
+                    </div>
+                    <div class="upcoming-card card-teal-green">
+                        <p class="time">Apr 6, 2:00 PM – 4:00 PM</p>
+                        <p class="event-name">Algorithms Lab</p>
+                        <span class="badge">Practical</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
